@@ -1,0 +1,100 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>I'm Lost - Home</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Rock+Salt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Ubuntu+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> </head>
+    
+
+<body>
+    <section id="logo-header"> <img src="images/Im%20Lost%20-%20Logo.png" height="100%" class="logo-head">
+        <!--<img width="100%" height="250px" src="https://via.placeholder.com/1000x250/FF0000/FFFFFFC/O https://placeholder.com/">--></section>
+    <div class="content">
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm menu">
+                        <ul class="nav flex-column ">
+                            <li class="nav-item"> <a class="nav-link active" href="index.html">Home</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="main.html">Start Game</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="howtoplay.html">How To Play</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="contactus.html">Contact Us</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-8 right-col-home"> 
+                      <div class="AboutBody">
+                          <h1>Welcome</h1>
+                        <div class="HomeBody">
+                        </div>
+                      </div>
+                      
+                       
+
+                        </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright: <a href="#" > Im Lost: The Game</a> </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+<script>
+// set up text to print, each item in array is new line
+
+var aText = new Array(
+"There are only 10 types of people in the world:", 
+"Those who understand binary, and those who don't"
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+</script>
+</html>
+
+
+<!-- Game size 512px -->
+
+

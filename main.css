@@ -1,0 +1,248 @@
+*{
+    
+}
+
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+  
+}
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+     background-image: url(images/prism.png);
+    
+}
+section{
+    
+}
+#logo-header{
+    background-color:#222;
+    background-image:url(images/bricks.jpg);
+    background-size: 400px;
+    border-bottom:5px solid #a52a28;
+    height:200px;
+    
+    
+    
+}
+.logo-head{
+    margin-left:30%;
+    padding:10px 0px;
+    height:100%;
+    
+}
+col-8{
+    margin:0;
+    padding:0;
+}
+#window{
+    height:512px;
+    width:512px;
+    background-image:none;
+    border:3px solid pink;
+}
+.game{
+    
+}
+#test{
+    margin:20%;
+    padding:60px;
+}
+.menu{
+    text-align: center;
+    background-image:url(images/prism.png);
+    font-family: 'Rock Salt', cursive;
+    background-color:#555555;
+    font-size:50px;
+    padding:5%;
+    
+   
+}
+.menu a{
+    font-weight:700;
+    text-shadow: 2px 2px #fff;
+    color:#a52a28;
+    box-shadow: 0px 0px 12px (255,255,255,0.8);
+    margin:15px 0px;
+    border:3px solid rgb(184, 67,64);
+    background-color: rgb(184, 67,64, 0.8);
+    background-image:url(images/bricks.jpg);
+    background-size: 2000px 1000px;
+}
+.menu a:hover{
+    color: #a52a28;
+    -webkit-box-shadow: 3px 35px 94px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 35px 94px -19px rgba(0,0,0,0.75);
+    box-shadow: 3px 35px 94px -19px rgba(0,0,0,0.75);
+    transform: scale(1.05);
+    background-color: rgb(184, 67,64, 1); 
+}
+.corridor{
+    opacity: 0.7;
+}
+.right-col-home{
+    background-color: #555555;
+    background-image:url(images/prism.png);
+    background-size:100%;
+    margin:0;
+    /*background-image:url(images/corridor.jpeg);*/
+}
+.HomeBody{
+    background-image: url(images/Dungeonrip.png);
+    background-size:115%;
+    height: 95%;
+    margin: 10%;
+    background-repeat: no-repeat;
+    /*background-image:url(images/corridor.jpeg);*/
+}
+.AboutBody{
+    background-size:100%;
+    height: 75%;
+    margin: 10%;
+
+}
+
+footer{
+    background:#333;
+    color: #a52a28;
+    text-shadow: ;
+    font-size: 25px;
+    border-top:5px solid #a52a28;
+    background-image:url(images/mosaic.png);
+    background-size: 400px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* How To Play */
+.htp-box table th4{
+    background-color:rgb(184, 67,64, 0.8);
+    border-top:none;
+}
+.table{
+    margin:5% 0;
+    color:white;
+}
+/* Contact Us*/
+form{
+    margin:5% 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.htp-box{
+    background-color: #555555;
+    background-image:url(images/prism.png);
+    
+    margin:0;
+    /*background-image:url(images/corridor.jpeg);*/
+}
+button{
+    background-color:rgb(184, 67,64, 0.9);
+    color:white;
+}
+button:hover{
+    background-color: rgb(184, 67,64, 0.6);
+    -webkit-box-shadow: 3px 35px 94px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 35px 94px -19px rgba(0,0,0,0.75);
+    box-shadow: 3px 5px 94px -9px #fff;
+}
+label{
+    color:white;
+    
+}
+
+.AboutBody h1{
+        font-size: 42px;
+    font-weight: 500;
+    color: rgb(184, 67,64, 1);
+        font-family: 'Rock Salt', cursive;
+}
+body h1{
+    font-family: 'Rock Salt', cursive;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    color: rgb(184, 67,64, 1);
+}
+.h1{
+    font-family: 'Rock Salt', cursive;
+    text-align:center;
+    color:#dee2e6;
+    margin:2%;
+}
+.htp-box h1{
+    font-family: 'Rock Salt', cursive;
+    color: rgb(184, 67,64, 1.0);
+}
+/* Type Writer Effect */
+ 
+#typedtext{
+    margin-top:10%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Covered By Your Grace', cursive;
+    color:#fff;
+    font-size: 34px;
+}
+.typewrite{ color:#fff; text-decoration: none; }
+/* End Of TypeWriter Effect */
+
+
+
+
+/*footer */
+footer a{
+    color:#a52a28;
+}
+@media only screen and (max-width: 900px){
+    .menu{
+        font-size:30px;
+    } 
+    .right-col-home{
+
+        width:100%;
+    }
+    .col-8{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+    .HomeBody{
+        background-image: url(images/Dungeon.jpg)
+    }
+
+    .menu{
+        font-size:10px;
+        
+    }
+    .col-8{
+        border-top:2px solid rgb(184, 67,64, 1);
+     min-width:100%;
+        flex:100%;
+        display:block;
+        overflow: hidden;
+        height:100%;
+      
+    }
+    .logo-head{
+        height:100%;
+        margin:0 15%;
+    }
+    #logo-header{
+        height:100px;
+    }
+
+    .menu a{
+        height:115%;
+         text-shadow: 0px 0px 0 ;
+    }
+    footer{
+        font-size: 15px;
+    }
+}
